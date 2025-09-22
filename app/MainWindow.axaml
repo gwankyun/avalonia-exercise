@@ -5,5 +5,30 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="app.MainWindow"
         Title="app">
-    Welcome to Avalonia!
+    <StackPanel>
+        <TextBox Name="textBox">textBox</TextBox>
+        <Button Click="Button_Click">Click</Button>
+        <StackPanel>
+            <TextBlock Name="tbk_01">tbk_01</TextBlock>
+            <Button Click="Button_Click">Button</Button>
+            <CheckBox>checkbox</CheckBox>
+            <Border Background="LightBlue"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Padding="15">
+                <StackPanel Background="White"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top">
+                    <TextBlock Margin="5,0"
+                               FontSize="18"
+                               HorizontalAlignment="Center">
+                        TextBlock
+                    </TextBlock>
+                    <Button HorizontalAlignment="Left" Margin="20">btn 1</Button>
+                    <Button HorizontalAlignment="Right" Margin="10">btn 2</Button>
+                    <Button HorizontalAlignment="Stretch">btn 3</Button>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </StackPanel>
 </Window>
